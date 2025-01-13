@@ -4,12 +4,11 @@ import Image from "next/image";
 import { Typewriter } from "nextjs-simple-typewriter";
 import { Suspense } from "react";
 import LoadingSpinner from "../ui/LoadingSpinner";
-import { motion } from "motion/react"
 
 
 export default function Intro() {
     return (
-        <motion.div
+        <div
         id="intro"
         className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
             <Suspense fallback={<LoadingSpinner/>}>
@@ -45,6 +44,6 @@ export default function Intro() {
                 </a>
             </div>
 
-        </motion.div>
+        </div>
     );
 }
